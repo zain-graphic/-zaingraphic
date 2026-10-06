@@ -1,0 +1,233 @@
+<!DOCTYPE html><html lang="ar" dir="rtl"><head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Zain Graphic | المعرض الشخصي</title><meta name="description"
+content="Zain Graphic | مصمم جرافيك ومحرر فيديو. استكشف أعمال التصميم والهويات البصرية والسوشيال ميديا والمونتاج.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Arabic:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css"></head><body><header class="header-navbar"><a href="#" class="brand-logo"><img
+src="my-logo.png"
+alt="Zain Graphic"
+onerror="
+this.src='https://via.placeholder.com/42/38bdf8/ffffff?text=ZG';
+">
+
+<span>
+Zain Graphic
+</span></a><ul class="nav-menu"><li>
+<button
+class="nav-btn"
+onclick="goHome()">الصفحة الرئيسية
+
+</button>
+</li><li class="services-dropdown"><button
+class="services-btn"
+id="servicesButton"
+aria-expanded="false"
+aria-haspopup="true"
+onclick="toggleServices()">
+
+خدماتي ▾
+
+</button><div
+class="services-menu"
+id="servicesMenu"><div class="service-item">
+<span>
+الهويات البصرية والتصميم المطبوع
+</span>
+</div><div class="service-item">
+<span>
+تصاميم السوشيال ميديا والإعلانات
+</span>
+</div><div class="service-item">
+<span>
+المونتاج وصناعة الفيديو
+</span>
+</div></div></li><li><button
+class="nav-btn"
+onclick="openPage('contact')">
+
+تواصل معي
+
+</button></li></ul></header><section
+class="hero-section"
+id="home"><div class="hero-3d-wrapper"><img
+src="my-logo.png"
+alt="Zain Graphic Logo"
+class="hero-3d-logo"
+
+onerror="
+this.src='https://via.placeholder.com/235/38bdf8/ffffff?text=ZG';
+">
+
+</div><h1 class="hero-title">
+Zain Graphic
+</h1><p class="hero-subtitle">
+مصمم جرافيك احترافي & محرر فيديو
+</p><div class="hero-quick-tabs"><button
+class="quick-tab-btn"
+onclick="openPage('explore')">
+
+استكشف أعمالي
+
+</button><button
+class="quick-tab-btn"
+onclick="openPage('about')">
+
+تعريف عني
+
+</button><button
+class="quick-tab-btn"
+onclick="openPage('contact')">
+
+تواصل معي
+
+</button></div></section><section class="explore-teaser"><div class="teaser-video-box"><video
+class="teaser-video"
+autoplay
+muted
+loop
+playsinline
+preload="auto">
+
+<source
+src="teaser.mp4"
+type="video/mp4">
+
+متصفحك لا يدعم تشغيل الفيديو.
+
+</video></div></section><div
+class="full-page-view"
+id="fullPageView"
+role="dialog"
+aria-modal="true"
+aria-labelledby="pageTitle"><div class="subpage-header"><div
+class="subpage-title"
+id="pageTitle">عنوان القسم
+
+</div><div class="subpage-actions"><button
+class="back-page-btn"
+id="backPageButton"
+onclick="goBackPage()">
+
+رجوع >
+
+</button><button
+class="close-page-btn"
+onclick="closePage()">
+
+إغلاق ✖
+
+</button></div></div><div class="subpage-body"><div
+id="page-about"
+class="page-content"
+style="display:none;"><div class="subpage-box">أنا زين، فنان متخصص في تصميم الجرافيك وتحرير الفيديو. أعمل على تحويل الأفكار إلى أعمال بصرية جذابة تجمع بين الهوية، الإبداع، والدقة. أهتم بتقديم تصاميم واضحة ومميزة تساعد المشروع أو العلامة التجارية على الظهور بصورة احترافية، مع الحرص على فهم احتياجات العميل وتحويلها إلى نتيجة بصرية مناسبة.
+
+</div></div><div
+id="page-explore"
+class="page-content"
+style="display:none;"><div class="category-page-intro"><h2>
+استكشف أعمالي
+</h2><p>
+تصفح مجالات عملي واختر القسم الذي ترغب في مشاهدة أعماله.
+</p></div><div
+class="category-grid"
+id="categoryGrid"></div></div><div
+id="page-logos"
+class="page-content"
+style="display:none;"><div id="logosContent"></div></div><div
+id="page-branding"
+class="page-content"
+style="display:none;"><div id="brandingContent"></div></div><div
+id="page-posters"
+class="page-content"
+style="display:none;"><div id="postersContent"></div></div><div
+id="page-social"
+class="page-content"
+style="display:none;"><div id="socialContent"></div></div><div
+id="page-reels"
+class="page-content"
+style="display:none;"><div id="reelsContent"></div></div><div
+id="page-infographics"
+class="page-content"
+style="display:none;"><div id="infographicsContent"></div></div><div
+id="page-magazines"
+class="page-content"
+style="display:none;"><div id="magazinesContent"></div></div><div
+id="page-books"
+class="page-content"
+style="display:none;"><div id="booksContent"></div></div><div
+id="page-weddings"
+class="page-content"
+style="display:none;"><div class="category-page-intro"><h2>
+تصاميم الأعراس والمناسبات
+</h2><p>
+اختر نوع التصميم الذي ترغب في استعراضه.
+</p></div><div class="wedding-tabs"><button
+class="wedding-tab active"
+data-wedding="invitations"
+onclick="switchWedding('invitations')">
+
+دعوات
+
+</button><button
+class="wedding-tab"
+data-wedding="congratulations"
+onclick="switchWedding('congratulations')">
+
+تهنئات
+
+</button></div><div
+id="wedding-invitations"
+class="wedding-panel active"></div><div
+id="wedding-congratulations"
+class="wedding-panel"></div></div><div
+id="page-contact"
+class="page-content"
+style="display:none;"><a
+href="https://wa.me/"
+class="social-full-link"
+target="_blank"
+rel="noopener noreferrer">
+
+<span style="display:flex;align-items:center;gap:12px;"><svg
+width="26"
+height="26"
+viewBox="0 0 24 24"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+aria-label="WhatsApp">
+
+<path
+d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.198-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.67-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.075-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.095 3.2 5.076 4.487.709.306 1.262.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347Z"
+fill="currentColor"/>
+
+<path
+fill-rule="evenodd"
+clip-rule="evenodd"
+d="M12 2C6.477 2 2 6.477 2 12c0 1.77.46 3.433 1.267 4.878L2 22l5.267-1.267A9.955 9.955 0 0 0 12 22c5.523 0 10-4.477 10-10S17.523 2 12 2Zm0 18a7.96 7.96 0 0 1-4.074-1.12l-.292-.174-3.126.752.752-3.126-.174-.292A7.96 7.96 0 0 1 4 12a8 8 0 1 1 8 8Z"
+fill="currentColor"/>
+
+</svg></span><span>
+⬅
+</span></a><a
+href="https://t.me/"
+class="social-full-link"
+target="_blank"
+rel="noopener noreferrer">
+
+<span style="display:flex;align-items:center;gap:12px;"><svg
+width="26"
+height="26"
+viewBox="0 0 24 24"
+fill="none"
+xmlns="http://www.w3.org/2000/svg"
+aria-label="Telegram">
+
+<path
+d="M21.5 3.5 18.25 20c-.246 1.168-.896 1.46-1.817.91l-5.02-3.7-2.422 2.332c-.268.268-.492.492-1.008.492l.36-5.112 9.3-8.4c.404-.36-.088-.56-.626-.2L5.52 13.15.57 11.6c-1.077-.337-1.096-1.077.224-1.594L20.14 2.38c.896-.337 1.68.2 1.36 1.12Z"
+fill="currentColor"/>
+
+</svg></span><span>
+⬅
+</span></a></div></div></div><script src="script.js"></script></body>
+  </html>
